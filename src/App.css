@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 520px;
+  height: 600px;
+  margin: 80px auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #e4e4e4;
+  box-shadow: rgba(3, 3, 3, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  
+}
+
+.lists{
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+input{
+  width: 80%;
+  padding: 15px;
+  border: 1px solid gray;
+}
+
+button{
+  padding: 10px 15px;
+  margin: 0 5px;
+  color: white;
+  background-color: #644536;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+ul{
+  list-style: none;
+  margin:0;
+  padding: 2px 14px;
+  height: 350px;
+  overflow-y: auto;
+}
+
+li{
+  margin: 12px auto;
+  padding: 5px 2px;
+  display: flex;
+  width: 90%;
+  align-items: center;
+  background-color: #fffcf2;
+  border: 1px solid #644536 ;
+  border-radius: 5px;
+  font-size: 17px;
+  
+}
+
