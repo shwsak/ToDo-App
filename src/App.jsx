@@ -9,7 +9,7 @@ function App() {
   const [toDo, setToDo] = useState("");
   const [toDos, setTodos] = useState([]);
   const [editId, setEditId] = useState(0);
-
+  
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -53,8 +53,10 @@ function App() {
       <InputForm handleSubmit={handleSubmit} toDo={toDo} setToDo={setToDo}/>
       <TaskList toDos={toDos} editId={editId} handleDelete={handleDelete} handleEdit={handleEdit} editRef={editRef} saveEdit={saveEdit}/>
       
+    { toDos.length > 0 && 
       <button style={{marginTop: "5px"}} onClick={()=> setTodos([])}>Completed All</button>
-    </div>
+    }
+      </div>
   )
 }
 
